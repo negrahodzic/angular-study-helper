@@ -2,13 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { IonicModule } from '@ionic/angular';
+import {CardComponent} from './card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
