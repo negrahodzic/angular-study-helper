@@ -1,3 +1,8 @@
-<p>index works!</p>
-
-<app-card></app-card>
+<ion-row>
+  <ion-col size="2"></ion-col>
+  <ion-col size="8">
+    <app-login (displayEvent)="displayEventHandler($event)" *ngIf="display"></app-login>
+    <app-register (displayEvent)="displayEventHandler($event)" *ngIf="!display"></app-register>
+  </ion-col>
+  <ion-col size="2"></ion-col>
+</ion-row>
