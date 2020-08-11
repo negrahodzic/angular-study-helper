@@ -1,8 +1,12 @@
-<ion-row>
-  <ion-col size="2"></ion-col>
-  <ion-col size="8">
-    <app-login (displayEvent)="displayEventHandler($event)" *ngIf="display"></app-login>
-    <app-register (displayEvent)="displayEventHandler($event)" *ngIf="!display"></app-register>
-  </ion-col>
-  <ion-col size="2"></ion-col>
-</ion-row>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="2"></ion-col>
+      <ion-col size-md="8">
+        <app-login (displayEvent)="displayEventHandler($event)" *ngIf="display"></app-login>
+        <app-register (displayEvent)="displayEventHandler($event)" *ngIf="!display"></app-register>
+      </ion-col>
+      <ion-col size-md="2"></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

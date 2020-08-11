@@ -1,57 +1,62 @@
-<div>
-  <h2>Registracija</h2>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title class="ion-margin-vertical ion-text-center">Registracija</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item class="roundUp" name="firstName">
+      <ion-label position="floating">
+        Ime {{ime}}
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="ime" ></ion-input>
+    </ion-item>
 
-  <ion-item class="roundUp" name="firstName">
-    <ion-label position="floating">
-      Ime
-    </ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+    <ion-item name="lastName">
+      <ion-label position="floating">
+      Prezime
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
 
-  <ion-item name="lastName">
-    <ion-label position="floating">
-    Prezime
-    </ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+    <ion-item name="username">
+      <ion-label position="floating">
+        <ion-icon name="person"></ion-icon>
+        Korisnicko ime
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
 
-  <ion-item name="username">
-    <ion-label position="floating">
-      <ion-icon name="person"></ion-icon>
-      Korisnicko ime
-    </ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+    <ion-item name="password">
+      <ion-label position="floating">
+        <ion-icon name="mail"></ion-icon>
+        Email adresa
+      </ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
 
-  <ion-item name="password">
-    <ion-label position="floating">
-      <ion-icon name="mail"></ion-icon>
-      Email adresa
-    </ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
+    <ion-item name="password">
+      <ion-label position="floating">
+        <ion-icon name="lock-closed"></ion-icon>
+        Sifra
+      </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
 
-  <ion-item name="password">
-    <ion-label position="floating">
-      <ion-icon name="lock-closed"></ion-icon>
-      Sifra
-    </ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+    <ion-item name="confirmPassword">
+      <ion-label position="floating">
+        <ion-icon name="lock-closed"></ion-icon>
+        Potvrdite sifru
+      </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
 
-  <ion-item name="confirmPassword">
-    <ion-label position="floating">
-      <ion-icon name="lock-closed"></ion-icon>
-      Potvrdite sifru
-    </ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+    <ion-item class="roundDown">
+      <ion-checkbox checked="false" color="success"></ion-checkbox>
+        <ion-label>Prihvatam <a>Uslove koriscenja</a> i <a>Politiku privatnosti</a>.</ion-label>
+    </ion-item>
+    <br>
 
-  <ion-item class="roundDown">
-    <ion-checkbox checked="false" color="success"></ion-checkbox>
-      <ion-label>Prihvatam <a>Uslove koriscenja</a> i <a>Politiku privatnosti</a>.</ion-label>
-  </ion-item>
-
-  <p>Vec imate nalog? <a (click)="login()">Prijavljivanje</a></p>
-
-</div>
+    <ion-button expand="block" color="success" fill="solid" (click)="register()" >Registruj se </ion-button>
+    <ion-card-subtitle class="ion-margin-vertical ion-text-center">
+      Imate nalog? {{tekst}} <a (click)="login()">Prijavljivanje</a>
+    </ion-card-subtitle>    </ion-card-content>
+</ion-card>

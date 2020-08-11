@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import {CardComponent} from './card/card.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,11 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     RegisterComponent
   ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot()
-  ],
+    imports: [
+        BrowserModule,
+        IonicModule.forRoot(),
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

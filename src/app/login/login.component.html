@@ -1,22 +1,27 @@
-<div >
-  <h2>Prijavljivanje</h2>
-
-  <ion-item name="username">
-    <ion-label position="floating">
-      <ion-icon name="person"></ion-icon>
-      Korisnicko ime
-    </ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-  <br>
-  <ion-item name="password">
-    <ion-label position="floating">
-      <ion-icon name="lock-closed"></ion-icon>
-      Sifra
-    </ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-  <br>
-  <ion-button expand="block" color="success" fill="solid" >Prijavi se</ion-button>
-  <p> Nemate nalog? <a (click)="register()">Registracija.</a></p>
-</div>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title class="ion-margin-vertical ion-text-center">Prijavljivanje</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item name="username">
+      <ion-label position="floating">
+        <ion-icon name="person"></ion-icon>
+        Korisnicko ime
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item name="password">
+      <ion-label position="floating">
+        <ion-icon name="lock-closed"></ion-icon>
+        Sifra
+      </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="block" color="success" fill="solid" >Prijavi se</ion-button>
+    <ion-card-subtitle class="ion-margin-vertical ion-text-center">
+      Nemate nalog? <a color="success" (click)="register()" >Registracija.</a>
+    </ion-card-subtitle>
+  </ion-card-content>
+</ion-card>
