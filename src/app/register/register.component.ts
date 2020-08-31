@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {User} from '../model/user';
+import {User} from '../models/user';
 
 @Component({
   selector: 'app-register',

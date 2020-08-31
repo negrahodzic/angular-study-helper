@@ -1,11 +1,11 @@
-<p>card works!</p>
-
-<ion-card color="primary">
+<ion-card color="success">
   <ion-card-header>
     <ion-card-subtitle><ion-badge color="warning">Grupa kartice</ion-badge></ion-card-subtitle>
-    <ion-card-title>Pitanje kartice</ion-card-title>
-    <hr color="white">  </ion-card-header>
+    <ion-card-title>{{card.question}}</ion-card-title>
+    <hr color="white">
+  </ion-card-header>
+
   <ion-card-content>
-    Odgovor kartice: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut lectus purus. Mauris ultricies arcu tellus, et eleifend massa dapibus sit amet. Maecenas semper sit amet odio ut varius. Morbi rutrum nunc ut justo malesuada viverra sed eget diam. Quisque gravida, ex eu rutrum tincidunt, justo lorem hendrerit lorem, eget ultricies odio velit facilisis nisl. Cras at sem sodales, tempor sem quis, fringilla odio.
+    {{card.answer}}
   </ion-card-content>
 </ion-card>
