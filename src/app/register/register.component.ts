@@ -17,10 +17,10 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login() {
-    this.display = true;
-    this.displayEvent.emit(this.display);
-  }
+  // login() {
+  //   this.display = true;
+  //   this.displayEvent.emit(this.display);
+  // }
   register() {
     // this.user = new User(this.ime);
     this.tekst = this.user.firstName;

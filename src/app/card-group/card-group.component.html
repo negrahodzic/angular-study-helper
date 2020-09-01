@@ -1,7 +1,2 @@
-<ion-item>
-  <ion-label>{{cardGroup.title}}</ion-label>
-<!--  <app-card-list>-->
-
-<!--  </app-card-list>-->
-</ion-item>
-
+<ion-title color="warning">{{cardGroup.title}}</ion-title>
+<app-card-list [cardList]="cardGroup.cardList"></app-card-list>

@@ -1,14 +1,13 @@
-<router-outlet></router-outlet>
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-title>Pomoc pri ucenju</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<!--<ion-app>-->
-<!--  <ion-header>-->
-<!--    <ion-toolbar color="success">-->
-<!--      <ion-title>Pomoc pri ucenju</ion-title>-->
-<!--    </ion-toolbar>-->
-<!--  </ion-header>-->
-
-<!--  <ion-content>-->
-<!--    <app-card-group-list [cardGroupList]="cardGroupList" (onGroupSelected)="groupWasSelected($event)"></app-card-group-list>-->
+  <ion-content>
+    <router-outlet></router-outlet>
+<!--    <app-card-group-row-list [cardGroupList]="cardGroupList" (onGroupSelected)="groupWasSelected($event)"></app-card-group-row-list>-->
 <!--    <app-card-list [cardList]="cardListFilter" [cardGroupClicked]="cardGroupClicked"></app-card-list>-->
 
 <!--    <ion-grid>-->
@@ -21,12 +20,12 @@
 
 <!--      </ion-row>-->
 <!--    </ion-grid>-->
-<!--  </ion-content>-->
+  </ion-content>
 
-<!--  <ion-footer>-->
-<!--    <ion-toolbar color="success">-->
-<!--      <ion-title size="small" align="center">Negra&Katarina</ion-title>-->
-<!--    </ion-toolbar>-->
-<!--  </ion-footer>-->
+  <ion-footer>
+    <ion-toolbar color="success">
+      <ion-title size="small" align="center">Negra&Katarina</ion-title>
+    </ion-toolbar>
+  </ion-footer>
 
-<!--</ion-app>-->
+</ion-app>

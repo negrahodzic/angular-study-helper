@@ -19,9 +19,9 @@
       <ion-input type="password"></ion-input>
     </ion-item>
     <br>
-    <ion-button expand="block" color="success" fill="solid" >Prijavi se</ion-button>
+    <ion-button expand="block" color="success" fill="solid" [routerLink]="['/home']" >Prijavi se</ion-button>
     <ion-card-subtitle class="ion-margin-vertical ion-text-center">
-      Nemate nalog? <a color="success" (click)="register()" >Registracija.</a>
+      Nemate nalog? <a color="success" [routerLink]="['/register']" >Registracija.</a>
     </ion-card-subtitle>
   </ion-card-content>
 </ion-card>

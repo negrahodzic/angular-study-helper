@@ -1,9 +1,9 @@
 <ion-list>
-    <app-card-group
+    <app-card-group-row
       *ngFor="let group of cardGroupList"
       [cardGroup]="group"
       (click)='clicked(group)'
-      [routerLink]="['/learning']">
-    </app-card-group>
+      [routerLink]="['/learning', group.title]">
+    </app-card-group-row>
 </ion-list>
 

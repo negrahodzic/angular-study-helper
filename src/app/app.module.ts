@@ -8,18 +8,21 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { CardGroupComponent } from './card-group/card-group.component';
+import { CardGroupRowComponent } from './card-group-row/card-group-row.component';
 import { CardGroupListComponent } from './card-group-list/card-group-list.component';
 import { CardListComponent } from './card-list/card-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LearningComponent } from './learning/learning.component';
+import { CardGroupComponent } from './card-group/card-group.component';
+import {CardGroupServiceService} from './card-group-service/card-group-service.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'learning', component: LearningComponent }
+  { path: 'learning', component: LearningComponent},
+  { path: 'learning/:cardGroup', component: CardGroupComponent}
 ];
 
 @NgModule({
@@ -29,10 +32,11 @@ const routes: Routes = [
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    CardGroupComponent,
+    CardGroupRowComponent,
     CardGroupListComponent,
     CardListComponent,
-    LearningComponent
+    LearningComponent,
+    CardGroupComponent
   ],
     imports: [
         BrowserModule,
@@ -40,7 +44,7 @@ const routes: Routes = [
         FormsModule,
       RouterModule.forRoot(routes)
     ],
-  providers: [],
+  providers: [CardGroupServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

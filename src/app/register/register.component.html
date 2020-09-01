@@ -57,6 +57,6 @@
 
     <ion-button expand="block" color="success" fill="solid" (click)="register()" >Registruj se </ion-button>
     <ion-card-subtitle class="ion-margin-vertical ion-text-center">
-      Imate nalog? {{tekst}} <a (click)="login()">Prijavljivanje</a>
+      Imate nalog? {{tekst}} <a [routerLink]="['/login']">Prijavljivanje</a>
     </ion-card-subtitle>    </ion-card-content>
 </ion-card>
