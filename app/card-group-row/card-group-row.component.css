@@ -1,9 +1,0 @@
-.label {
-  color: #3e6545;
-  font-size: large;
-}
-
-ion-item {
-  --ion-background-color: linear-gradient(90deg, #eefca9 30%, #b7e576, #83cc61 100%);
-  padding-bottom: 0.5%;
-}
