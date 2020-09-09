@@ -1,0 +1,13 @@
+ion-row {
+  margin-top: 30px;
+}
+
+ion-app {
+  --ion-background-color: white;
+}
+
+.header,.footer{
+  --background: #5a9e7c;
+  color: white;
+}
+

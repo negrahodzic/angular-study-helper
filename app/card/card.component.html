@@ -1,0 +1,24 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{card.question}}</ion-card-title>
+    <hr color="white">
+  </ion-card-header>
+
+  <ion-card-content>
+    {{card.answer}}
+
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button color="warning" fill="solid" size="small" shape="round" (click)="editCardModal()">
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="danger" fill="solid" size="small" shape="round" (click)="presentAlertConfirm()">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+
+  </ion-card-content>
+</ion-card>
+
