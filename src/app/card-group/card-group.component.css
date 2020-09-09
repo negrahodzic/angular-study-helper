@@ -1,0 +1,11 @@
+ion-button {
+  --background: #b7e576;
+  color: white;
+  font-size: xx-large;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+ion-title {
+  color: #3e6545;
+}

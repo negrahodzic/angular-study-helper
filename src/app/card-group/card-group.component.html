@@ -1,5 +1,14 @@
 <ion-toolbar>
-  <ion-title color="warning" align="center">{{cardGroup.title}}</ion-title>
+  <ion-title align="center">{{cardGroup.title}}</ion-title>
 </ion-toolbar>
+<ion-grid>
+  <ion-row>
+    <ion-col size-md="8" offset-md = "2">
+      <ion-button expand="block" fill="solid">+</ion-button>
+      <app-card-list [cardList]="cardGroup.cardList"
+                     [cardGroup]="cardGroup">
+      </app-card-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
-<app-card-list [cardList]="cardGroup.cardList"></app-card-list>

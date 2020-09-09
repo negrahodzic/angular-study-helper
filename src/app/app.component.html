@@ -1,29 +1,16 @@
 <ion-app>
-  <ion-header>
-    <ion-toolbar color="success">
-      <ion-title>Pomoc pri ucenju</ion-title>
+  <ion-header >
+    <ion-toolbar class="header">
+      <ion-title>{{title}}</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <router-outlet></router-outlet>
-<!--    <app-card-group-row-list [cardGroupList]="cardGroupList" (onGroupSelected)="groupWasSelected($event)"></app-card-group-row-list>-->
-<!--    <app-card-list [cardList]="cardListFilter" [cardGroupClicked]="cardGroupClicked"></app-card-list>-->
-
-<!--    <ion-grid>-->
-<!--      <ion-row>-->
-
-<!--        <ion-col size-md="8" offset-md = "2">-->
-<!--          <app-login (displayEvent)="displayEventHandler($event)" *ngIf="display"></app-login>-->
-<!--          <app-register (displayEvent)="displayEventHandler($event)" *ngIf="!display"></app-register>-->
-<!--        </ion-col>-->
-
-<!--      </ion-row>-->
-<!--    </ion-grid>-->
   </ion-content>
 
-  <ion-footer>
-    <ion-toolbar color="success">
+  <ion-footer >
+    <ion-toolbar class="footer">
       <ion-title size="small" align="center">Negra&Katarina</ion-title>
     </ion-toolbar>
   </ion-footer>
